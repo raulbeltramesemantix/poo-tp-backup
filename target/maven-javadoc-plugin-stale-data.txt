@@ -1,0 +1,47 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'/home/raulbeltrame/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'hamburgueria_poo_raulBeltrame_matheusDias 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'hamburgueria_poo_raulBeltrame_matheusDias 1.0-SNAPSHOT API'
+com.mycompany.hamburgueria_poo_raulbeltrame_matheusdias
+/home/raulbeltrame/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar = 1673019840000
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/src/main/java = 1776040438037
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/type-search-index.js = 1777249806913
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/index.html = 1777249806952
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/stylesheet.css = 1777249806956
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/allclasses-index.html = 1777249806910
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/package-search-index.js = 1777249806913
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/help-doc.html = 1777249806955
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/element-list = 1777249806765
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/tag-search-index.js = 1777249806914
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/jquery-ui.overrides.css = 1777249806958
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/overview-tree.html = 1777249806876
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/index-all.html = 1777249806951
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/member-search-index.js = 1777249806914
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/module-search-index.js = 1777249806912
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/script.js = 1777249806956
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/search.js = 1777249806957
+/home/raulbeltrame/NetBeansProjects/hamburgueria_poo_raulBeltrame_matheusDias/target/reports/apidocs/allpackages-index.html = 1777249806911
