@@ -61,7 +61,7 @@ public class Hamburgueria_poo_raulBeltrame_matheusDias {
         );
         persistenciaJSON.carregarDados();
 
-        // deixo Raul como administrador principal, sem apagar os admins extras ja cadastrados
+        // fico como administrador principal, sem apagar os admins extras ja cadastrados
         configurarAdministradorPrincipal(cadastroUsuarios);
 
         // o autenticador recebe o cadastro por associacao e devolve Usuario, a classe abstrata do diagrama
