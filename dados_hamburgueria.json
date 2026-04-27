@@ -1,0 +1,637 @@
+{
+  "estacoes": [
+    {
+      "idEstacao": 1,
+      "nome": "Chapa",
+      "ocupada": false
+    },
+    {
+      "idEstacao": 2,
+      "nome": "Montagem",
+      "ocupada": false
+    },
+    {
+      "idEstacao": 3,
+      "nome": "Finalizacao",
+      "ocupada": false
+    }
+  ],
+  "qtdPedidosCriados": 5,
+  "qtdProdutosCriados": 3,
+  "dadosLoja": {
+    "nomeLoja": "Hamburgueria Central",
+    "telefone": "38999990000",
+    "endereco": "Rua Principal 10 Centro",
+    "horarioFuncionamento": "18 00 ate 23 59",
+    "taxaEntrega": 6.0
+  },
+  "administrador": {
+    "idUsuario": 1,
+    "nome": "Raul",
+    "login": "Raul",
+    "senha": "6504"
+  },
+  "administradores": [
+    {
+      "idUsuario": 5,
+      "nome": "Dias",
+      "login": "Dias",
+      "senha": "123"
+    }
+  ],
+  "funcionarios": [
+    {
+      "idUsuario": 2,
+      "nome": "Joao Pedro",
+      "login": "joao",
+      "senha": "987"
+    },
+    {
+      "idUsuario": 3,
+      "nome": "Maria Clara",
+      "login": "mariaclara",
+      "senha": "novasenha"
+    },
+    {
+      "idUsuario": 4,
+      "nome": "Eduardo",
+      "login": "Eduardo",
+      "senha": "123"
+    }
+  ],
+  "clientes": [
+    {
+      "idCliente": 1,
+      "nome": "Lucas Souza",
+      "telefone": "38988887777",
+      "endereco": "Rua A 100 Centro",
+      "idUltimoPedido": 4,
+      "dataUltimoPedido": "2026-10-12"
+    },
+    {
+      "idCliente": 2,
+      "nome": "Carla Pereira",
+      "telefone": "38977776666",
+      "endereco": "Rua B 200 Rio Grande",
+      "idUltimoPedido": 2,
+      "dataUltimoPedido": "2026-04-14"
+    }
+  ],
+  "produtos": [
+    {
+      "idProduto": 2,
+      "nome": "X Salada",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 2,
+        "descricaoDetalhada": "Pao carne queijo alface tomate molho",
+        "valor": 23.0
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "5": 1.0
+      }
+    },
+    {
+      "idProduto": 3,
+      "nome": "X Bacon Especial",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 3,
+        "descricaoDetalhada": "Pao carne queijo bacon molho especial",
+        "valor": 27.0
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 1.0,
+        "6": 2.0,
+        "7": 1.0
+      }
+    }
+  ],
+  "pedidos": [
+    {
+      "idPedido": 1,
+      "dataPedido": "2026-04-14",
+      "horarioPedido": "19:00:00",
+      "horarioEntregaPrevisto": "19:40:00",
+      "status": "ENTREGUE",
+      "valorTotal": 89.0,
+      "valorPago": 70.0,
+      "idCliente": 1,
+      "funcionarioResponsavel": {
+        "idUsuario": 2,
+        "nome": "Joao Pedro",
+        "login": "joao",
+        "senha": "987"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 2,
+          "subtotal": 62.0,
+          "produto": {
+            "idProduto": 2,
+            "nome": "X Salada",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 2,
+              "descricaoDetalhada": "Pao carne queijo alface tomate molho",
+              "valor": 23.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 1,
+              "nome": "Bacon crocante",
+              "valor": 5.0
+            },
+            {
+              "idAdicional": 2,
+              "nome": "Cheddar",
+              "valor": 3.0
+            }
+          ]
+        },
+        {
+          "quantidade": 1,
+          "subtotal": 27.0,
+          "produto": {
+            "idProduto": 3,
+            "nome": "X Bacon Especial",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 3,
+              "descricaoDetalhada": "Pao carne queijo bacon molho especial",
+              "valor": 27.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "6": 2.0,
+              "7": 1.0
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 2,
+      "dataPedido": "2026-04-14",
+      "horarioPedido": "19:20:00",
+      "horarioEntregaPrevisto": "20:15:00",
+      "status": "EM_PREPARO",
+      "valorTotal": 60.0,
+      "valorPago": 70.0,
+      "idCliente": 2,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Maria Clara",
+        "login": "mariaclara",
+        "senha": "novasenha"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 2,
+          "subtotal": 60.0,
+          "produto": {
+            "idProduto": 3,
+            "nome": "X Bacon Especial",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 3,
+              "descricaoDetalhada": "Pao carne queijo bacon molho especial",
+              "valor": 27.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "6": 2.0,
+              "7": 1.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 2,
+              "nome": "Cheddar",
+              "valor": 3.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idPedido": 3,
+      "dataPedido": "2026-04-14",
+      "horarioPedido": "20:00:00",
+      "horarioEntregaPrevisto": "20:40:00",
+      "status": "CANCELADO",
+      "valorTotal": 23.0,
+      "valorPago": 30.0,
+      "idCliente": 1,
+      "funcionarioResponsavel": {
+        "idUsuario": 2,
+        "nome": "Joao Pedro",
+        "login": "joao",
+        "senha": "987"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 23.0,
+          "produto": {
+            "idProduto": 2,
+            "nome": "X Salada",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 2,
+              "descricaoDetalhada": "Pao carne queijo alface tomate molho",
+              "valor": 23.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.0,
+              "5": 1.0
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 4,
+      "dataPedido": "2026-10-12",
+      "horarioPedido": "20:12:00",
+      "horarioEntregaPrevisto": "21:00:00",
+      "status": "RECEBIDO",
+      "valorTotal": 185.0,
+      "valorPago": 100.0,
+      "idCliente": 1,
+      "funcionarioResponsavel": {
+        "idUsuario": 4,
+        "nome": "Eduardo",
+        "login": "Eduardo",
+        "senha": "123"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 5,
+          "subtotal": 185.0,
+          "produto": {
+            "idProduto": 3,
+            "nome": "X Bacon Especial",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 3,
+              "descricaoDetalhada": "Pao carne queijo bacon molho especial",
+              "valor": 27.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 1.0,
+              "2": 1.0,
+              "3": 1.0,
+              "6": 2.0,
+              "7": 1.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 2,
+              "nome": "2",
+              "valor": 10.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "estoque": {
+    "ingredientes": [
+      {
+        "idIngrediente": 1,
+        "nome": "Pao",
+        "quantidadeAtual": 55.0,
+        "unidadeMedida": "unidade",
+        "quantidadeMinima": 10.0
+      },
+      {
+        "idIngrediente": 2,
+        "nome": "Carne",
+        "quantidadeAtual": 25.0,
+        "unidadeMedida": "unidade",
+        "quantidadeMinima": 8.0
+      },
+      {
+        "idIngrediente": 3,
+        "nome": "Queijo",
+        "quantidadeAtual": 30.0,
+        "unidadeMedida": "unidade",
+        "quantidadeMinima": 10.0
+      },
+      {
+        "idIngrediente": 4,
+        "nome": "Alface",
+        "quantidadeAtual": 23.0,
+        "unidadeMedida": "folha",
+        "quantidadeMinima": 6.0
+      },
+      {
+        "idIngrediente": 5,
+        "nome": "Tomate",
+        "quantidadeAtual": 23.0,
+        "unidadeMedida": "fatia",
+        "quantidadeMinima": 6.0
+      },
+      {
+        "idIngrediente": 6,
+        "nome": "Bacon",
+        "quantidadeAtual": 29.0,
+        "unidadeMedida": "fatia",
+        "quantidadeMinima": 5.0
+      },
+      {
+        "idIngrediente": 7,
+        "nome": "Molho",
+        "quantidadeAtual": 21.0,
+        "unidadeMedida": "porcao",
+        "quantidadeMinima": 5.0
+      },
+      {
+        "idIngrediente": 8,
+        "nome": "Milh",
+        "quantidadeAtual": 10.0,
+        "unidadeMedida": "pacote",
+        "quantidadeMinima": 9.0
+      }
+    ]
+  },
+  "fornecedores": [
+    {
+      "idFornecedor": 1,
+      "nome": "Fornecedor Minas",
+      "telefone": "38966665555"
+    }
+  ],
+  "recebimentosEstoque": [
+    {
+      "idRecebimento": 1,
+      "dataRecebimento": "2026-04-14",
+      "descricaoRecebimento": "Recebimento do ingrediente 1 na quantidade 20.0",
+      "idFornecedor": 1,
+      "nomeFornecedor": "Fornecedor Minas"
+    },
+    {
+      "idRecebimento": 2,
+      "dataRecebimento": "2026-04-14",
+      "descricaoRecebimento": "Recebimento do ingrediente 6 na quantidade 15.0",
+      "idFornecedor": 1,
+      "nomeFornecedor": "Fornecedor Minas"
+    }
+  ],
+  "acoesEstoque": [
+    "Recebi estoque do fornecedor Fornecedor Minas",
+    "Recebi estoque do fornecedor Fornecedor Minas",
+    "Baixei 2.0 de Pao no pedido 1",
+    "Baixei 2.0 de Carne no pedido 1",
+    "Baixei 2.0 de Queijo no pedido 1",
+    "Baixei 2.0 de Alface no pedido 1",
+    "Baixei 2.0 de Tomate no pedido 1",
+    "Baixei 1.0 de Pao no pedido 1",
+    "Baixei 1.0 de Carne no pedido 1",
+    "Baixei 1.0 de Queijo no pedido 1",
+    "Baixei 2.0 de Bacon no pedido 1",
+    "Baixei 1.0 de Molho no pedido 1",
+    "Baixei 2.0 de Pao no pedido 2",
+    "Baixei 2.0 de Carne no pedido 2",
+    "Baixei 2.0 de Queijo no pedido 2",
+    "Baixei 4.0 de Bacon no pedido 2",
+    "Baixei 2.0 de Molho no pedido 2"
+  ],
+  "vendas": [
+    {
+      "idVenda": 1,
+      "dataVenda": "2026-04-14",
+      "valorTotal": 89.0,
+      "pedido": {
+        "idPedido": 1,
+        "dataPedido": "2026-04-14",
+        "horarioPedido": "19:00:00",
+        "horarioEntregaPrevisto": "19:40:00",
+        "status": "ENTREGUE",
+        "valorTotal": 89.0,
+        "valorPago": 70.0,
+        "idCliente": 1,
+        "funcionarioResponsavel": {
+          "idUsuario": 2,
+          "nome": "Joao Pedro",
+          "login": "joao",
+          "senha": "987"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 2,
+            "subtotal": 62.0,
+            "produto": {
+              "idProduto": 2,
+              "nome": "X Salada",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 2,
+                "descricaoDetalhada": "Pao carne queijo alface tomate molho",
+                "valor": 23.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 1.0,
+                "2": 1.0,
+                "3": 1.0,
+                "4": 1.0,
+                "5": 1.0
+              }
+            },
+            "adicionais": [
+              {
+                "idAdicional": 1,
+                "nome": "Bacon crocante",
+                "valor": 5.0
+              },
+              {
+                "idAdicional": 2,
+                "nome": "Cheddar",
+                "valor": 3.0
+              }
+            ]
+          },
+          {
+            "quantidade": 1,
+            "subtotal": 27.0,
+            "produto": {
+              "idProduto": 3,
+              "nome": "X Bacon Especial",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 3,
+                "descricaoDetalhada": "Pao carne queijo bacon molho especial",
+                "valor": 27.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 1.0,
+                "2": 1.0,
+                "3": 1.0,
+                "6": 2.0,
+                "7": 1.0
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 1,
+        "dataEmissao": "2026-04-14",
+        "detalhes": "Loja Hamburgueria Central\nTelefone 38999990000\nEndereco Rua Principal 10 Centro\nPedido 1\nCliente 1\nValor total 89.0"
+      },
+      "entrega": {
+        "idEntrega": 1,
+        "statusEntrega": "Concluida",
+        "confirmacaoWhatsapp": true,
+        "motoqueiro": {
+          "idMotoqueiro": 1,
+          "nome": "Paulo",
+          "telefone": "38995550001",
+          "ativo": true
+        },
+        "regiaoEntrega": {
+          "idRegiao": 1,
+          "nomeRegiao": "Centro",
+          "bairros": "Centro Largo Dom Joao"
+        }
+      }
+    },
+    {
+      "idVenda": 2,
+      "dataVenda": "2026-04-14",
+      "valorTotal": 60.0,
+      "pedido": {
+        "idPedido": 2,
+        "dataPedido": "2026-04-14",
+        "horarioPedido": "19:20:00",
+        "horarioEntregaPrevisto": "20:15:00",
+        "status": "EM_PREPARO",
+        "valorTotal": 60.0,
+        "valorPago": 70.0,
+        "idCliente": 2,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Maria Clara",
+          "login": "mariaclara",
+          "senha": "novasenha"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 2,
+            "subtotal": 60.0,
+            "produto": {
+              "idProduto": 3,
+              "nome": "X Bacon Especial",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 3,
+                "descricaoDetalhada": "Pao carne queijo bacon molho especial",
+                "valor": 27.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 1.0,
+                "2": 1.0,
+                "3": 1.0,
+                "6": 2.0,
+                "7": 1.0
+              }
+            },
+            "adicionais": [
+              {
+                "idAdicional": 2,
+                "nome": "Cheddar",
+                "valor": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 2,
+        "dataEmissao": "2026-04-14",
+        "detalhes": "Loja Hamburgueria Central\nTelefone 38999990000\nEndereco Rua Principal 10 Centro\nPedido 2\nCliente 2\nValor total 60.0"
+      }
+    }
+  ],
+  "motoqueiros": [
+    {
+      "idMotoqueiro": 1,
+      "nome": "Paulo",
+      "telefone": "38995550001",
+      "ativo": true
+    },
+    {
+      "idMotoqueiro": 2,
+      "nome": "Rafa",
+      "telefone": "38995550002",
+      "ativo": true
+    },
+    {
+      "idMotoqueiro": 3,
+      "nome": "Bruno",
+      "telefone": "38995550003",
+      "ativo": true
+    },
+    {
+      "idMotoqueiro": 4,
+      "nome": "Diego",
+      "telefone": "38995550004",
+      "ativo": true
+    },
+    {
+      "idMotoqueiro": 5,
+      "nome": "Tales",
+      "telefone": "38995550005",
+      "ativo": true
+    },
+    {
+      "idMotoqueiro": 6,
+      "nome": "Joice",
+      "telefone": "38995550006",
+      "ativo": false
+    }
+  ],
+  "regioesEntrega": [
+    {
+      "idRegiao": 1,
+      "nomeRegiao": "Centro",
+      "bairros": "Centro Largo Dom Joao"
+    },
+    {
+      "idRegiao": 2,
+      "nomeRegiao": "Rio Grande",
+      "bairros": "Rio Grande Bom Jesus"
+    }
+  ],
+  "relatoriosEmitidos": [
+    "Relatorio dia 2026-04-14 quantidade 2 total 149.0",
+    "Relatorio mes 4 ano 2026 quantidade 2 total 149.0",
+    "Balanco mensal EstatisticaVendas{data\u003d2026-04-01, quantidadePedidos\u003d2, totalVendido\u003d149.0, produtoMaisVendido\u003d\u0027X Bacon Especial\u0027}"
+  ]
+}
