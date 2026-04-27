@@ -7,9 +7,11 @@ public class Fornecedor {
     private String nome;
     private String telefone;
 
+    // construtor padrao usado para criar fornecedor vazio
     public Fornecedor() {
     }
 
+    // construtor completo para cadastrar fornecedor
     public Fornecedor(int idFornecedor, String nome, String telefone) {
         this.idFornecedor = idFornecedor;
         this.nome = nome;

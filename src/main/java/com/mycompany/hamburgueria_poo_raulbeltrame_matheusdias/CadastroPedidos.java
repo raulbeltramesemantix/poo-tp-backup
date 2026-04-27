@@ -15,10 +15,12 @@ public class CadastroPedidos {
     // associo o cadastro de pedidos aos clientes para manter o historico
     private CadastroClientes cadastroClientes;
 
+    // construtor padrao que cria a fila e deixa clientes sem associacao inicial
     public CadastroPedidos() {
         this(new FilaPedidos(), null);
     }
 
+    // construtor completo para associar fila fifo e cadastro de clientes
     public CadastroPedidos(FilaPedidos filaPedidos, CadastroClientes cadastroClientes) {
         this.pedidos = new ArrayList<>();
         this.filaPedidos = filaPedidos;

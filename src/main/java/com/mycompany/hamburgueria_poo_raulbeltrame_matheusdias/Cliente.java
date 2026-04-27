@@ -20,10 +20,12 @@ public class Cliente implements Comparator<Cliente> {
     // associacao: cliente tambem consulta recibos gerados pelas vendas
     private transient List<Recibo> recibos;
 
+    // construtor padrao que inicializa as colecoes do cliente
     public Cliente() {
         inicializarColecoes();
     }
 
+    // construtor completo para cadastrar cliente e ultimo pedido
     public Cliente(int idCliente, String nome, String telefone, String endereco, int idUltimoPedido, Date dataUltimoPedido) {
         this.idCliente = idCliente;
         this.nome = nome;

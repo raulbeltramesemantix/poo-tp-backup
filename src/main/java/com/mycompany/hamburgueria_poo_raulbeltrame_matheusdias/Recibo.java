@@ -10,9 +10,11 @@ public class Recibo {
     private Date dataEmissao;
     private String detalhes;
 
+    // construtor padrao usado para gerar recibo vazio
     public Recibo() {
     }
 
+    // construtor completo para criar recibo com data e detalhes
     public Recibo(int idRecibo, Date dataEmissao, String detalhes) {
         this.idRecibo = idRecibo;
         this.dataEmissao = dataEmissao;

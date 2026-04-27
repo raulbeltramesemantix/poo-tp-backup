@@ -41,6 +41,7 @@ public class PersistenciaJSON {
     // composicao Gson configurado pertence a esta persistencia
     private final Gson gson;
 
+    // construtor completo que recebe todos os objetos que serao persistidos
     public PersistenciaJSON(
             Path caminhoArquivo,
             SistemaDelivery sistemaDelivery,

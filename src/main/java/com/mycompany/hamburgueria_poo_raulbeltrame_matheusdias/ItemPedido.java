@@ -14,10 +14,12 @@ public class ItemPedido {
     // agregacao o item pode ter varios adicionais escolhidos no pedido
     private List<Adicional> adicionais;
 
+    // construtor padrao que inicia os adicionais do item
     public ItemPedido() {
         this.adicionais = new ArrayList<>();
     }
 
+    // construtor completo para criar item com produto quantidade e adicionais
     public ItemPedido(Produto produto, int quantidade, List<Adicional> adicionais) {
         this();
         this.produto = produto;

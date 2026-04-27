@@ -12,9 +12,11 @@ public class RecebimentoEstoque {
     private int idFornecedor;
     private String nomeFornecedor;
 
+    // construtor padrao usado para criar recebimento vazio
     public RecebimentoEstoque() {
     }
 
+    // construtor completo para registrar entrada feita por fornecedor
     public RecebimentoEstoque(int idRecebimento, Date dataRecebimento, String descricaoRecebimento, int idFornecedor, String nomeFornecedor) {
         this.idRecebimento = idRecebimento;
         this.dataRecebimento = dataRecebimento;

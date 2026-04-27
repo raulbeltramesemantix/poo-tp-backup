@@ -10,6 +10,7 @@ public class CadastroProdutos {
     // agregacao cadastro mantem uma lista dinamica de produtos
     private List<Produto> produtos;
 
+    // construtor padrao que inicia a lista dinamica de produtos
     public CadastroProdutos() {
         this.produtos = new ArrayList<>();
     }

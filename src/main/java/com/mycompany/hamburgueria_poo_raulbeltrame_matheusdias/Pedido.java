@@ -23,10 +23,12 @@ public class Pedido implements Comparator<Pedido> {
     // composicao ItemPedido faz parte do Pedido e nao tem sentido isolado no fluxo
     private List<ItemPedido> itensPedido;
 
+    // construtor padrao que inicia a lista de itens do pedido
     public Pedido() {
         this.itensPedido = new ArrayList<>();
     }
 
+    // construtor completo para criar pedido com cliente funcionario e itens
     public Pedido(
             int idPedido,
             int idCliente,

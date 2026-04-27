@@ -13,6 +13,7 @@ public class CadastroUsuarios {
     // agregacao guardo administradores extras cadastrados pelo proprio admin
     private List<Administrador> administradores;
 
+    // construtor padrao que inicia funcionarios e administradores extras
     public CadastroUsuarios() {
         this.funcionarios = new ArrayList<>();
         this.administradores = new ArrayList<>();

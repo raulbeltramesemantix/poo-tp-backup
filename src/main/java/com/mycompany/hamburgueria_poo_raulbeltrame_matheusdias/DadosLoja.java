@@ -9,9 +9,11 @@ public class DadosLoja {
     private String horarioFuncionamento;
     private double taxaEntrega;
 
+    // construtor padrao usado para iniciar a loja sem dados preenchidos
     public DadosLoja() {
     }
 
+    // construtor completo para cadastrar as informacoes da empresa
     public DadosLoja(String nomeLoja, String telefone, String endereco, String horarioFuncionamento, double taxaEntrega) {
         this.nomeLoja = nomeLoja;
         this.telefone = telefone;

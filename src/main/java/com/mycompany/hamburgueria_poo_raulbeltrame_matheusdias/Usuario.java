@@ -11,9 +11,11 @@ public abstract class Usuario {
     private String login;
     private String senha;
 
+    // construtor padrao usado pelas subclasses e pela persistencia
     public Usuario() {
     }
 
+    // construtor completo da classe abstrata base dos usuarios
     public Usuario(int idUsuario, String nome, String login, String senha) {
         this.idUsuario = idUsuario;
         this.nome = nome;

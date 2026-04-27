@@ -10,6 +10,7 @@ public class FilaPedidos {
     // fifo: Queue garante que o primeiro pedido que entra seja o primeiro a sair
     private transient Queue<Pedido> pedidos;
 
+    // construtor padrao que inicia a fila fifo de pedidos
     public FilaPedidos() {
         this.pedidos = new ArrayDeque<>();
     }

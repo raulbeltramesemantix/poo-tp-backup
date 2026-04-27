@@ -9,10 +9,12 @@ public class Estoque {
     // agregacao estoque agrupa varios ingredientes cadastrados
     private List<Ingrediente> ingredientes;
 
+    // construtor padrao que inicia a lista de ingredientes
     public Estoque() {
         this.ingredientes = new ArrayList<>();
     }
 
+    // construtor completo para iniciar estoque com ingredientes existentes
     public Estoque(List<Ingrediente> ingredientes) {
         this();
         if (ingredientes != null) {

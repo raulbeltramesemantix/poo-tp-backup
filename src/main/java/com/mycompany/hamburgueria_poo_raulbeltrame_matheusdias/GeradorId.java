@@ -7,6 +7,10 @@ public class GeradorId {
     private static int ultimoIdPedido;
     private static int ultimoIdProduto;
 
+    // construtor padrao mantido para o javadoc mostrar a criacao da classe
+    public GeradorId() {
+    }
+
     // gero um novo id de cliente
     public static synchronized int gerarIdCliente() {
         ultimoIdCliente++;

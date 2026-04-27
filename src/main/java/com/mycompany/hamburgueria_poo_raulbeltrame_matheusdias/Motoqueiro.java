@@ -8,9 +8,11 @@ public class Motoqueiro {
     private String telefone;
     private boolean ativo;
 
+    // construtor padrao usado para criar motoqueiro vazio
     public Motoqueiro() {
     }
 
+    // construtor completo para cadastrar motoqueiro e status
     public Motoqueiro(int idMotoqueiro, String nome, String telefone, boolean ativo) {
         this.idMotoqueiro = idMotoqueiro;
         this.nome = nome;

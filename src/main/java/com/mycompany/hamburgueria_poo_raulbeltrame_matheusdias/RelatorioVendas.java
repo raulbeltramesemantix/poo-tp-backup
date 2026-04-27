@@ -15,10 +15,12 @@ public class RelatorioVendas {
     // agregacao historico dos relatorios emitidos
     private List<String> relatoriosEmitidos;
 
+    // construtor padrao que cria controle de vendas interno
     public RelatorioVendas() {
         this(new ControleVendas());
     }
 
+    // construtor completo para associar relatorio ao controle de vendas
     public RelatorioVendas(ControleVendas controleVendas) {
         this.controleVendas = controleVendas;
         this.relatoriosEmitidos = new ArrayList<>();

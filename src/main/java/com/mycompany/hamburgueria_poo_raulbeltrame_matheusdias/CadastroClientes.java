@@ -9,6 +9,7 @@ public class CadastroClientes {
     // agregacao cadastro mantem uma lista dinamica de clientes
     private List<Cliente> clientes;
 
+    // construtor padrao que inicia a lista dinamica de clientes
     public CadastroClientes() {
         this.clientes = new ArrayList<>();
     }

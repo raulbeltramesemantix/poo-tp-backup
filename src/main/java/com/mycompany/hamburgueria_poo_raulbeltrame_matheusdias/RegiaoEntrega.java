@@ -7,9 +7,11 @@ public class RegiaoEntrega {
     private String nomeRegiao;
     private String bairros;
 
+    // construtor padrao usado para criar regiao vazia
     public RegiaoEntrega() {
     }
 
+    // construtor completo para cadastrar a regiao de entrega
     public RegiaoEntrega(int idRegiao, String nomeRegiao, String bairros) {
         this.idRegiao = idRegiao;
         this.nomeRegiao = nomeRegiao;

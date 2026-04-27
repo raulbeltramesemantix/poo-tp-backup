@@ -18,10 +18,12 @@ public class ControleEstoque {
     // agregacao fornecedores ficam cadastrados no controle de estoque
     private List<Fornecedor> fornecedores;
 
+    // construtor padrao que cria um estoque novo
     public ControleEstoque() {
         this(new Estoque());
     }
 
+    // construtor completo para associar um estoque existente ao controle
     public ControleEstoque(Estoque estoque) {
         this.estoque = estoque;
         this.recebimentosEstoque = new ArrayList<>();

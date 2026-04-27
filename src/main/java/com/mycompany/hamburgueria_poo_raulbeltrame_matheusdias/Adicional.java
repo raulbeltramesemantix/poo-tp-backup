@@ -7,9 +7,11 @@ public class Adicional {
     private String nome;
     private double valor;
 
+    // construtor padrao usado quando o objeto e criado vazio
     public Adicional() {
     }
 
+    // construtor completo usado para criar um adicional com seus dados
     public Adicional(int idAdicional, String nome, double valor) {
         this.idAdicional = idAdicional;
         this.nome = nome;

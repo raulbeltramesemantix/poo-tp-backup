@@ -16,9 +16,11 @@ public class Venda {
     // associacao: a venda pode ter uma entrega ligada a ela
     private Entrega entrega;
 
+    // construtor padrao usado para criar venda vazia
     public Venda() {
     }
 
+    // construtor completo para ligar venda ao pedido
     public Venda(int idVenda, Date dataVenda, double valorTotal, Pedido pedido) {
         this.idVenda = idVenda;
         this.dataVenda = dataVenda;

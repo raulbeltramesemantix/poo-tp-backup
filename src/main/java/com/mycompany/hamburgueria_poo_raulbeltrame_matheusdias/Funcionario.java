@@ -3,9 +3,11 @@ package com.mycompany.hamburgueria_poo_raulbeltrame_matheusdias;
 // aplico heranca ao especializar usuario para o papel de funcionario
 public class Funcionario extends Usuario {
 
+    // construtor padrao usado para criar funcionario vazio
     public Funcionario() {
     }
 
+    // construtor completo que usa super para chamar usuario
     // uso super para reaproveitar o construtor da classe mae
     public Funcionario(int idUsuario, String nome, String login, String senha) {
         super(idUsuario, nome, login, senha);

@@ -10,9 +10,11 @@ public class EstatisticaVendas {
     private double totalVendido;
     private String produtoMaisVendido;
 
+    // construtor padrao usado para criar estatistica vazia
     public EstatisticaVendas() {
     }
 
+    // construtor completo para registrar o balanco mensal calculado
     public EstatisticaVendas(Date data, int quantidadePedidos, double totalVendido, String produtoMaisVendido) {
         this.data = data;
         this.quantidadePedidos = quantidadePedidos;

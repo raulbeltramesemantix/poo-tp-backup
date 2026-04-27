@@ -7,9 +7,11 @@ public class EstacaoPreparo {
     private String nome;
     private boolean ocupada;
 
+    // construtor padrao usado para criar estacao vazia
     public EstacaoPreparo() {
     }
 
+    // construtor completo para montar uma estacao do sistema
     public EstacaoPreparo(int idEstacao, String nome, boolean ocupada) {
         this.idEstacao = idEstacao;
         this.nome = nome;

@@ -17,10 +17,12 @@ public class ControleVendas {
     //guardo dinamicamente as vendas concluidas
     private List<Venda> vendas;
 
+    // construtor padrao que cria dependencias basicas para venda
     public ControleVendas() {
         this(new DadosLoja(), new ControleEstoque(), new CadastroClientes());
     }
 
+    // construtor completo para associar loja estoque e clientes
     public ControleVendas(DadosLoja dadosLoja, ControleEstoque controleEstoque, CadastroClientes cadastroClientes) {
         this.dadosLoja = dadosLoja;
         this.controleEstoque = controleEstoque;

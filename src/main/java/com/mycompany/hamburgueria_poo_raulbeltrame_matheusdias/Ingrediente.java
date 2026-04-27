@@ -9,9 +9,11 @@ public class Ingrediente {
     private String unidadeMedida;
     private double quantidadeMinima;
 
+    // construtor padrao usado quando o ingrediente ainda nao tem dados
     public Ingrediente() {
     }
 
+    // construtor completo para criar ingrediente com quantidade e minimo
     public Ingrediente(int idIngrediente, String nome, double quantidadeAtual, String unidadeMedida, double quantidadeMinima) {
         this.idIngrediente = idIngrediente;
         this.nome = nome;

@@ -14,10 +14,12 @@ public class Produto {
     // associacao: produto referencia ingredientes da receita pelo id
     private Map<Integer, Double> quantidadesIngredientesPorId;
 
+    // construtor padrao que prepara a receita vazia do produto
     public Produto() {
         this.quantidadesIngredientesPorId = new LinkedHashMap<>();
     }
 
+    // construtor completo para criar produto com descricao e receita
     public Produto(int idProduto, String nome, boolean ativo, DescricaoProduto descricaoProduto, Map<Integer, Double> quantidadesIngredientesPorId) {
         this();
         this.idProduto = idProduto;

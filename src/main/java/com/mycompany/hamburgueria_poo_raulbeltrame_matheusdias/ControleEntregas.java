@@ -11,11 +11,13 @@ public class ControleEntregas {
     // agregacao controle mantem varias regioes de entrega
     private List<RegiaoEntrega> regioesEntrega;
 
+    // construtor padrao que inicia motoqueiros e regioes vazios
     public ControleEntregas() {
         this.motoqueiros = new ArrayList<>();
         this.regioesEntrega = new ArrayList<>();
     }
 
+    // construtor completo para carregar motoqueiros e regioes existentes
     public ControleEntregas(List<Motoqueiro> motoqueiros, List<RegiaoEntrega> regioesEntrega) {
         this();
         if (motoqueiros != null) {

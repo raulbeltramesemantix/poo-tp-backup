@@ -6,9 +6,11 @@ public class Autenticador {
     // associacao o autenticador consulta o cadastro de usuarios
     private CadastroUsuarios cadastroUsuarios;
 
+    // construtor padrao usado quando o cadastro sera definido depois
     public Autenticador() {
     }
 
+    // construtor completo para associar o cadastro de usuarios
     public Autenticador(CadastroUsuarios cadastroUsuarios) {
         this.cadastroUsuarios = cadastroUsuarios;
     }

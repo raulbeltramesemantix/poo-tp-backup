@@ -12,6 +12,7 @@ public class SistemaDelivery {
     //uso static no nivel da classe para contar produtos criados
     protected static int qtdProdutosCriados;
 
+    // construtor padrao que cria o vetor fixo de tres estacoes
     public SistemaDelivery() {
         estacoes = new EstacaoPreparo[3];
     }

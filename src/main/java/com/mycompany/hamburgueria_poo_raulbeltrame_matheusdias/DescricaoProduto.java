@@ -7,9 +7,11 @@ public class DescricaoProduto {
     private String descricaoDetalhada;
     private double valor;
 
+    // construtor padrao usado pela persistencia e criacao vazia
     public DescricaoProduto() {
     }
 
+    // construtor completo para ligar descricao e valor ao produto
     public DescricaoProduto(int idDescricao, String descricaoDetalhada, double valor) {
         this.idDescricao = idDescricao;
         this.descricaoDetalhada = descricaoDetalhada;

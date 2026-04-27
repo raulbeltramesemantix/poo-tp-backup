@@ -11,9 +11,11 @@ public class Entrega {
     // associacao: entrega pertence a uma regiao de entrega
     private RegiaoEntrega regiaoEntrega;
 
+    // construtor padrao usado para criar entrega vazia
     public Entrega() {
     }
 
+    // construtor completo para iniciar uma entrega sem motoqueiro e regiao
     public Entrega(int idEntrega, String statusEntrega, boolean confirmacaoWhatsapp) {
         this.idEntrega = idEntrega;
         this.statusEntrega = statusEntrega;
