@@ -2,7 +2,7 @@
   "estacoes": [
     {
       "idEstacao": 1,
-      "nome": "Chapa",
+      "nome": "Preparo",
       "ocupada": false
     },
     {
@@ -19,9 +19,9 @@
   "qtdPedidosCriados": 5,
   "qtdProdutosCriados": 3,
   "dadosLoja": {
-    "nomeLoja": "Hamburgueria Central",
-    "telefone": "38999990000",
-    "endereco": "Rua Principal 10 Centro",
+    "nomeLoja": "Hmmmburguer",
+    "telefone": "38988889999",
+    "endereco": "Rua X, 10, Jardim",
     "horarioFuncionamento": "18 00 ate 23 59",
     "taxaEntrega": 6.0
   },
@@ -64,7 +64,7 @@
       "idCliente": 1,
       "nome": "Lucas Souza",
       "telefone": "38988887777",
-      "endereco": "Rua A 100 Centro",
+      "endereco": "Rua A 100 Jardim",
       "idUltimoPedido": 4,
       "dataUltimoPedido": "2026-10-12"
     },
@@ -503,7 +503,7 @@
       "recibo": {
         "idRecibo": 1,
         "dataEmissao": "2026-04-14",
-        "detalhes": "Loja Hamburgueria Central\nTelefone 38999990000\nEndereco Rua Principal 10 Centro\nPedido 1\nCliente 1\nValor total 89.0"
+        "detalhes": "Loja Hmmmburguer\nTelefone 38999990000\nEndereco Rua Principal 10 Centro\nPedido 1\nCliente 1\nValor total 89.0"
       },
       "entrega": {
         "idEntrega": 1,
@@ -575,7 +575,7 @@
       "recibo": {
         "idRecibo": 2,
         "dataEmissao": "2026-04-14",
-        "detalhes": "Loja Hamburgueria Central\nTelefone 38999990000\nEndereco Rua Principal 10 Centro\nPedido 2\nCliente 2\nValor total 60.0"
+        "detalhes": "Loja Hmmmburguer\nTelefone 38999990000\nEndereco Rua Principal 10 Centro\nPedido 2\nCliente 2\nValor total 60.0"
       }
     }
   ],

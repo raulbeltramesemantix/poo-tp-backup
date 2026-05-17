@@ -5,12 +5,9 @@ import java.util.Arrays;
 //centralizo o sistema e mantenho as tres estacoes fixas do diagrama
 public class SistemaDelivery {
 
-    // composicao o sistema monta e controla as tres estacoes fixas
-    private EstacaoPreparo[] estacoes;
-    //uso static para compartilhar o contador de pedidos entre todas as instancias
-    private static int qtdPedidosCriados;
-    //uso static no nivel da classe para contar produtos criados
-    protected static int qtdProdutosCriados;
+    private EstacaoPreparo[] estacoes;    // composicao o sistema monta e controla as tres estacoes fixas
+    private static int qtdPedidosCriados;    //uso static para compartilhar o contador de pedidos entre todas as instancias
+    protected static int qtdProdutosCriados;    //uso static no nivel da classe para contar produtos criados
 
     // construtor padrao que cria o vetor fixo de tres estacoes
     public SistemaDelivery() {
@@ -22,7 +19,7 @@ public class SistemaDelivery {
         if (estacoes == null || estacoes.length != 3) {
             estacoes = new EstacaoPreparo[3];
         }
-        estacoes[0] = new EstacaoPreparo(1, "Chapa", false);
+        estacoes[0] = new EstacaoPreparo(1, "Preparo", false);
         estacoes[1] = new EstacaoPreparo(2, "Montagem", false);
         estacoes[2] = new EstacaoPreparo(3, "Finalizacao", false);
     }

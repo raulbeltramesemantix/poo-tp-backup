@@ -13,11 +13,11 @@ import java.util.Scanner;
 
 public class Hamburgueria_poo_raulBeltrame_matheusDias {
 
-    // static final: constantes compartilhadas pelo menu principal
+    // static final constantes que compartilho pelo menu principal
     private static final String ARQUIVO_DADOS = "dados_hamburgueria.json";
     private static final String LOGIN_UNICO = "Raul";
     private static final String SENHA_UNICA = "6504";
-    // static: controla o loop principal da aplicacao
+    // static só pra controlar o loop principal da aplicacao
     private static boolean encerrarSistema;
 
     public static void main(String[] args) {
@@ -29,9 +29,9 @@ public class Hamburgueria_poo_raulBeltrame_matheusDias {
 
         // uso objetos de dominio para representar os dados reais da hamburgueria
         DadosLoja dadosLoja = new DadosLoja(
-                "Hamburgueria Central",
-                "38999990000",
-                "Rua Principal 10 Centro",
+                "Hmmmburguer",
+                "38988889999",
+                "Rua X, 10, Jardim",
                 "18 00 ate 23 59",
                 6.0
         );
