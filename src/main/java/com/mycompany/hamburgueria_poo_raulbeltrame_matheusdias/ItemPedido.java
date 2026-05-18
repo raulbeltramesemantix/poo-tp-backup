@@ -5,6 +5,7 @@ import java.util.List;
 
 // faco associacao entre item pedido e produto
 //faco agregacao de adicionais no mesmo item
+// uso decorator para calcular produto base com adicionais sem criar subclasses de Produto
 public class ItemPedido {
 
     private int quantidade;
@@ -30,18 +31,24 @@ public class ItemPedido {
         calcularSubtotal();
     }
 
-    // somo produto e adicionais do item
+    // somo produto e adicionais usando a cadeia do padrao decorator
     public double calcularSubtotal() {
-        double valorBase = 0.0;
-        if (produto != null && produto.getDescricaoProduto() != null) {
-            valorBase = produto.getDescricaoProduto().getValor();
-        }
-        double valorAdicionais = 0.0;
-        for (Adicional adicional : getAdicionais()) {
-            valorAdicionais += adicional.getValor();
-        }
-        subtotal = (valorBase + valorAdicionais) * quantidade;
+        ItemCardapio itemCardapio = montarItemCardapio();
+        double valorUnitario = itemCardapio != null ? itemCardapio.calcularValor() : 0.0;
+        subtotal = valorUnitario * quantidade;
         return subtotal;
+    }
+
+    // monto a cadeia decorator somente no calculo para preservar Produto e List<Adicional> no json
+    private ItemCardapio montarItemCardapio() {
+        if (produto == null) {
+            return null;
+        }
+        ItemCardapio itemCardapio = produto;
+        for (Adicional adicional : getAdicionais()) {
+            itemCardapio = new AdicionalDecorator(itemCardapio, adicional);
+        }
+        return itemCardapio;
     }
 
     public int getQuantidade() {
