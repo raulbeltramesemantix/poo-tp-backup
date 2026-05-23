@@ -8,112 +8,103 @@
 
 \sloppy
 
-\title{Avaliação do Padrão Decorator em um Sistema de Hamburgueria}
+\title{Ideia do padrão decorator em um sistema de hamburgueria}
 
 \author{Raul Beltrame\inst{1}, Matheus Dias\inst{1}}
 
 \address{Curso de Programação Orientada a Objetos\\
-Instituição de Ensino\\
-\email{\{raul.beltrame,matheus.dias\}@exemplo.com}
+Sistemas de Informações - UFVJM\\
+\email{\{raul.beltrame,matheus.dias\}@ufvjm.edu.br}
 }
 
 \begin{document}
 
 \maketitle
 
-\begin{abstract}
-This paper analyzes which design pattern is easier and more coherent to apply
-in an object-oriented burger restaurant system implemented in Java. The study
-compares candidate patterns against the current structure of the project,
-considering implementation effort, impact on existing classes, domain fit and
-pedagogical clarity. The results indicate that the Decorator pattern is the
-best alternative for the project because the system already has products,
-extras and order items whose final price depends on optional additions.
-\end{abstract}
-
 \begin{resumo}
-Este artigo analisa qual padrão de projeto é mais simples e coerente para ser
-aplicado em um sistema de hamburgueria desenvolvido em Java com programação
-orientada a objetos. O estudo compara padrões candidatos com a estrutura atual
-do projeto, considerando esforço de implementação, impacto nas classes
-existentes, aderência ao domínio e clareza didática. Os resultados indicam que
-o padrão Decorator é a alternativa mais adequada para o projeto, pois o sistema
-já possui produtos, adicionais e itens de pedido cujo preço final depende de
-acréscimos opcionais.
+Neste artigo analisamos qual padrão de projeto era o mais simples e coerente para aplicarmos
+em um sistema de hamburgueria desenvolvido em Java na disciplina programação
+orientada a objetos. Neste estudo comparamos padrões candidatos com a estrutura atual
+considerando esforço de implementação, impacto nas classes
+que já temos e também se tinha uma certa clareza didática. Nos estudos pensamos que
+o padrão Decorator era a alternativa mais adequada para o projeto, pois o sistema
+já possui produtos, adicionais e itens de pedido que preço final depende de opcionais.
 \end{resumo}
 
 \section{Introdução}
 
-Padrões de projeto são soluções reutilizáveis para problemas recorrentes de
-desenvolvimento de software orientado a objetos. Eles não representam código
-pronto, mas estruturas de colaboração entre classes que ajudam a organizar
+Os Padrões de projeto são soluções reutilizáveis para problemas recorrentes de
+desenvolvimento de software orientado a objetos. Eles não representam exatamente código
+pronto, mas formas de colaboração entre classes que ajudam a organizar
 responsabilidades, reduzir acoplamento e melhorar a manutenção do sistema
 \cite{gamma1994}.
 
-O projeto analisado é um sistema de hamburgueria desenvolvido em Java. Ele
+Essa preocupação também se relaciona com critérios de qualidade de
+software que venho estudando. Kleppmann destaca confiabilidade, escalabilidade e manutenibilidade
+como objetivos importantes na construção de sistemas, além de associar a
+manutenibilidade a qualidades como simplicidade, operabilidade e
+facilidade de evolução \cite{kleppmann2017}. Mesmo em um projeto de menor escala,
+esses conceitos ajudam a justificar o uso de padrões de projeto,
+pois uma solução bem organizada tende a ser mais fácil de entender, reusar, alterar e 
+até para nossa apresentação.
+
+Falando do projeto, o projeto analisado é um sistema de hamburgueria desenvolvido em Java. Ele
 possui classes para clientes, funcionários, produtos, pedidos, vendas,
-estoque, entregas e persistência em JSON. Dentro desse domínio, uma regra
+estoque, entregas e persistência em JSON. Dentro desse escopo, uma regra
 importante é a montagem de um pedido a partir de um produto base e de
 adicionais escolhidos pelo cliente. Essa característica aproxima o sistema do
 padrão Decorator, cujo objetivo é acrescentar responsabilidades ou
 comportamentos a um objeto de forma flexível, sem criar uma grande hierarquia
 de subclasses.
 
-Entre os padrões listados para o trabalho, também foram considerados Singleton,
-DAO, Factory Method, Builder, Strategy e State. Entretanto, considerando o
-contexto da hamburgueria, o Decorator apresenta a melhor relação entre
+Entre os padrões listados como opções, também consideramos o Singleton. Porém, considerando o
+contexto da hamburgueria, achamos que o Decorator apresenta a melhor relação entre
 facilidade de implementação, utilidade no domínio e clareza para explicação
-acadêmica.
+acadêmica. Além disso, ele nos pareceu mais desafiador do que o Singleton.
 
 \section{Objetivo}
 
-O objetivo deste trabalho é identificar o padrão de projeto mais fácil e mais
-adequado para ser implementado no sistema de hamburgueria, justificando a
+O objetivo deste trabalho é identificar o padrão de projeto mais
+adequado para ser implementado no sistema de hamburgueria, alinhando a
 escolha com base na estrutura atual do código.
-
-Como objetivo específico, busca-se avaliar o uso do padrão Decorator na
-representação de produtos personalizados com adicionais, demonstrando como ele
-pode melhorar a organização da regra de cálculo do subtotal de um item de
-pedido.
+Especificamente, buscaamos avaliar o uso do padrão Decorator na
+representação de produtos que já eram personalizados/decorados com adicionais, 
+demonstrando como ele pode melhorar a organização da regra de cálculo do subtotal 
+de um item de pedido.
 
 \section{Material e Métodos}
 
-O material utilizado foi o código-fonte do sistema de hamburgueria, estruturado
-como um projeto Maven em Java. A análise concentrou-se nas classes
+O material que trabalhamos em cima foi o código do sistema de hamburgueria, estruturado
+como um projeto em Java. A análise concentrou-se nas nossas classes
 \texttt{Produto}, \texttt{DescricaoProduto}, \texttt{Adicional},
 \texttt{ItemPedido}, \texttt{Pedido}, \texttt{CadastroPedidos},
 \texttt{GeradorId} e \texttt{PersistenciaJSON}.
 
-O método adotado foi uma inspeção qualitativa do código. Para cada padrão
-candidato, foram considerados quatro critérios:
+O método adotado foi uma análise  qualitativa do código. Para cada padrão
+candidato, foram considerados quatro ideias:
 
 \begin{itemize}
-    \item esforço de implementação;
-    \item quantidade de classes afetadas;
-    \item coerência com as regras de negócio da hamburgueria;
-    \item facilidade de explicação no artigo e na apresentação.
+    \item esforço para implementar
+    \item quantidade de classes a mudar
+    \item coerência com as regras de negócio
+    \item facilidade de explicação no artigo e na apresentação
 \end{itemize}
-
-Após essa comparação, foi escolhido o padrão com melhor equilíbrio entre baixo
-esforço técnico e boa aderência ao domínio. A análise não se limitou ao menor
-número de linhas alteradas, pois uma solução muito pequena pode ter pouco valor
-didático se não resolver um problema real do sistema.
 
 \section{Resultados e Discussão}
 
-A análise mostrou que o padrão Singleton seria o mais curto de implementar,
+Nosso estudo mostrou que o padrão Singleton seria o mais curto de implementar,
 pois a classe \texttt{GeradorId} já centraliza a geração de identificadores por
 meio de atributos e métodos estáticos. Bastaria transformar essa classe em uma
 instância única controlada. Porém, essa solução teria impacto funcional
 limitado, pois apenas formalizaria um comportamento que já está centralizado no
 projeto.
 
-O padrão Decorator, por outro lado, encaixa-se diretamente na regra de negócio
+O padrão Decorator, por outro lado, encaixa diretamente na regra de negócio
 dos pedidos. Atualmente, a classe \texttt{ItemPedido} possui um \texttt{Produto}
 e uma lista de objetos \texttt{Adicional}. O método de cálculo do subtotal soma
 o preço base do produto com os valores dos adicionais e multiplica o resultado
 pela quantidade. Essa estrutura já representa, de forma simplificada, a ideia
-central do Decorator: partir de um objeto base e acrescentar funcionalidades ou
+central do Decorator que é a partir de um objeto base e acrescentar funcionalidades ou
 valores sem modificar diretamente a classe original.
 
 Uma implementação formal poderia criar uma interface, por exemplo
@@ -133,15 +124,12 @@ queijo, molho extra ou outros adicionais de forma encadeada.
 \hline
 Singleton & Geração única de identificadores na classe \texttt{GeradorId}. & Muito simples, mas pouco expressivo. \\
 Decorator & Personalização de produtos com adicionais em \texttt{ItemPedido}. & Simples e muito aderente ao domínio. \\
-DAO & Separação entre cadastros e persistência em JSON. & Útil, mas exige refatoração maior. \\
-State & Controle dos estados de \texttt{Pedido}. & Coerente, mas exige várias classes novas. \\
-Strategy & Variações de cálculo, como entrega ou desconto. & Bom, mas depende de regras ainda pouco exploradas. \\
 Factory Method/Builder & Criação de pedidos e produtos complexos. & Possível, mas menos direto que Decorator. \\
 \hline
 \end{tabular}
 \end{table}
 
-Com base nessa comparação, o Decorator foi considerado o padrão mais adequado
+Com base nessa comparação, o Decorator foi considerado por nós o padrão mais adequado
 para o trabalho. Ele não exige mudanças profundas na arquitetura, aproveita
 classes já existentes e melhora a separação de responsabilidades. A classe
 \texttt{Produto} pode continuar representando o item cadastrado no cardápio,
@@ -153,19 +141,17 @@ explicar que um lanche base recebe complementos opcionais. Isso facilita a
 apresentação do padrão e mostra uma aplicação prática, diferente de uma
 implementação meramente artificial.
 
-Os demais padrões da lista, como Composite, Abstract Factory, Adapter, Chain of
-Responsibility, Prototype, Proxy, Bridge, Memento, Command, Observer, Flyweight,
-Facade, Mediator, Interpreter e Iterator, também poderiam ser aplicados em
-partes específicas do sistema. Entretanto, para este projeto, eles exigiriam a
-criação de regras novas ou uma remodelagem maior do código existente, o que os
-torna menos indicados para uma implementação simples e objetiva.
+Os demais padrões da lista também poderiam ser aplicados em
+partes específicas do sistema. Porém, para este projeto, eles exigiriam a
+criação de regras novas ou uma remodelagem maior do código, o que achamos
+menos indicados para uma implementação simples e objetiva.
 
 \section{Conclusão}
 
-Conclui-se que o padrão Decorator é a melhor escolha para o contexto do sistema
+Concluimos que o padrão Decorator é a melhor escolha para o contexto do sistema
 de hamburgueria. Embora o Singleton seja tecnicamente o padrão com menor
-alteração possível, o Decorator apresenta melhor aderência ao domínio, pois
-representa diretamente a personalização de produtos com adicionais.
+alteração, o Decorator apresenta melhor aderência ao escopo, pois
+representa diretamente a personalização de produtos com adicionais, como já abstraímos.
 
 A implementação proposta permite calcular o valor de um item de pedido de
 forma mais flexível e organizada, sem criar subclasses para cada combinação de
@@ -183,6 +169,11 @@ Gamma, E., Helm, R., Johnson, R. and Vlissides, J. (1994).
 \bibitem{freeman2004}
 Freeman, E., Freeman, E., Sierra, K. and Bates, B. (2004).
 \newblock \textit{Head First Design Patterns}.
+\newblock O'Reilly Media.
+
+\bibitem{kleppmann2017}
+Kleppmann, M. (2017).
+\newblock \textit{Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems}.
 \newblock O'Reilly Media.
 
 \bibitem{sbc2017}
