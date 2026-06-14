@@ -1,6 +1,8 @@
 package com.mycompany.hamburgueria_poo_raulbeltrame_matheusdias;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 // centralizo o cadastro dos clientes em colecao dinamica
@@ -38,6 +40,18 @@ public class CadastroClientes {
     public Cliente buscarCliente(int id) {
         for (Cliente cliente : getClientes()) {
             if (cliente.getIdCliente() == id) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+
+    // busco um cliente usando Iterator e o criterio definido pelo Comparator
+    public Cliente find(Cliente clienteProcurado, Comparator<Cliente> comparator) {
+        Iterator<Cliente> iterator = getClientes().iterator();
+        while (iterator.hasNext()) {
+            Cliente cliente = iterator.next();
+            if (comparator.compare(cliente, clienteProcurado) == 0) {
                 return cliente;
             }
         }
