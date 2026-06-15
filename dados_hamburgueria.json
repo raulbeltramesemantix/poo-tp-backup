@@ -1,1 +1,1576 @@
-{}
+{
+  "estacoes": [
+    {
+      "idEstacao": 1,
+      "nome": "Preparo",
+      "ocupada": false
+    },
+    {
+      "idEstacao": 2,
+      "nome": "Montagem",
+      "ocupada": false
+    },
+    {
+      "idEstacao": 3,
+      "nome": "Finalizacao",
+      "ocupada": false
+    }
+  ],
+  "qtdPedidosCriados": 10,
+  "qtdProdutosCriados": 5,
+  "dadosLoja": {
+    "nomeLoja": "Hmmmburguer",
+    "telefone": "38988889999",
+    "endereco": "Rua X, 10, Jardim",
+    "horarioFuncionamento": "18 00 ate 23 59",
+    "taxaEntrega": 6.0
+  },
+  "administrador": {
+    "idUsuario": 1,
+    "nome": "Raul",
+    "login": "Raul",
+    "senha": "6504"
+  },
+  "administradores": [
+    {
+      "idUsuario": 4,
+      "nome": "Matheus Dias",
+      "login": "Dias",
+      "senha": "2525"
+    }
+  ],
+  "funcionarios": [
+    {
+      "idUsuario": 2,
+      "nome": "Igor Henrique",
+      "login": "Igor",
+      "senha": "1234"
+    },
+    {
+      "idUsuario": 3,
+      "nome": "Antonio",
+      "login": "Antony",
+      "senha": "6776"
+    }
+  ],
+  "clientes": [
+    {
+      "idCliente": 1,
+      "nome": "João Victor Fernandes",
+      "telefone": "(38) 99812-4501",
+      "endereco": "Rua da Glória, 125, Centro, Diamantina - MG",
+      "idUltimoPedido": 1,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 2,
+      "nome": "Maria Eduarda Silva",
+      "telefone": "(38) 99734-5821",
+      "endereco": "Rua Direita, 87, Centro, Diamantina - MG",
+      "idUltimoPedido": 2,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 3,
+      "nome": "Gabriel Henrique Souza",
+      "telefone": "(38) 99845-1236",
+      "endereco": "Rua Macau de Baixo, 214, Centro, Diamantina - MG",
+      "idUltimoPedido": 3,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 4,
+      "nome": "Ana Clara Oliveira",
+      "telefone": "(38) 99678-3452",
+      "endereco": "Rua das Mercês, 59, Bairro Rio Grande, Diamantina - MG",
+      "idUltimoPedido": 4,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 5,
+      "nome": "Pedro Lucas Martins",
+      "telefone": "(38) 99791-6784",
+      "endereco": "Rua do Amparo, 301, Centro, Diamantina - MG",
+      "idUltimoPedido": 5,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 6,
+      "nome": "Júlia Fernandes Costa",
+      "telefone": "(38) 99823-4567",
+      "endereco": "Rua da Quitanda, 142, Centro, Diamantina - MG",
+      "idUltimoPedido": 6,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 7,
+      "nome": "Rafael Gomes Pereira",
+      "telefone": "(38) 99654-7891",
+      "endereco": "Rua do Bonfim, 78, Bairro Bom Jesus, Diamantina - MG",
+      "idUltimoPedido": 7,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 8,
+      "nome": "Larissa Almeida Rocha",
+      "telefone": "(38) 99867-2345",
+      "endereco": "Rua Caminho dos Escravos, 190, Bairro Palha, Diamantina - MG",
+      "idUltimoPedido": 8,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 9,
+      "nome": "Matheus Rodrigues Lima",
+      "telefone": "(38) 99745-8912",
+      "endereco": "Rua São Francisco, 223, Bairro Bela Vista, Diamantina - MG",
+      "idUltimoPedido": 9,
+      "dataUltimoPedido": "2026-06-14"
+    },
+    {
+      "idCliente": 10,
+      "nome": "Camila Vitória Santos",
+      "telefone": "(38) 99890-5678",
+      "endereco": "Rua da Caridade, 110, Bairro Centro, Diamantina - MG",
+      "idUltimoPedido": 10,
+      "dataUltimoPedido": "2026-06-14"
+    }
+  ],
+  "produtos": [
+    {
+      "idProduto": 1,
+      "nome": "X-Burger Clássico",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 1,
+        "descricaoDetalhada": "Hambúrguer bovino artesanal de 120g, queijo mussarela derretido, alface crocante e tomate fresco no pão brioche tostado.",
+        "valor": 18.0
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 2.0,
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.5,
+        "5": 1.5
+      }
+    },
+    {
+      "idProduto": 2,
+      "nome": "X-Salada",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 2,
+        "descricaoDetalhada": "X-Salada Especial",
+        "valor": 21.9
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 2.0,
+        "2": 1.0,
+        "4": 3.0,
+        "5": 2.0,
+        "6": 1.5
+      }
+    },
+    {
+      "idProduto": 3,
+      "nome": "X-Bacon",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 3,
+        "descricaoDetalhada": "Hambúrguer bovino, cheddar cremoso e generosas fatias de bacon crocante.",
+        "valor": 24.9
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 2.0,
+        "2": 1.0,
+        "10": 2.0,
+        "8": 3.0
+      }
+    },
+    {
+      "idProduto": 4,
+      "nome": "X-Egg Bacon",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 4,
+        "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+        "valor": 26.9
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 2.0,
+        "2": 1.0,
+        "9": 1.0,
+        "10": 2.0,
+        "8": 3.0
+      }
+    },
+    {
+      "idProduto": 5,
+      "nome": "Duplo Cheddar",
+      "ativo": true,
+      "descricaoProduto": {
+        "idDescricao": 5,
+        "descricaoDetalhada": "Dois hambúrgueres artesanais de 120g, cheddar cremoso e cebola caramelizada.",
+        "valor": 32.0
+      },
+      "quantidadesIngredientesPorId": {
+        "1": 2.0,
+        "2": 2.0,
+        "10": 4.0,
+        "11": 1.0
+      }
+    }
+  ],
+  "pedidos": [
+    {
+      "idPedido": 1,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "18:56:00",
+      "horarioEntregaPrevisto": "20:00:00",
+      "status": "SAIU_PARA_ENTREGA",
+      "valorTotal": 53.8,
+      "valorPago": 53.9,
+      "idCliente": 1,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 2,
+          "subtotal": 53.8,
+          "produto": {
+            "idProduto": 4,
+            "nome": "X-Egg Bacon",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 4,
+              "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+              "valor": 26.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "9": 1.0,
+              "10": 2.0,
+              "8": 3.0
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 2,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "19:15:00",
+      "horarioEntregaPrevisto": "20:10:00",
+      "status": "ENTREGUE",
+      "valorTotal": 56.4,
+      "valorPago": 56.4,
+      "idCliente": 2,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 24.4,
+          "produto": {
+            "idProduto": 2,
+            "nome": "X-Salada",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 2,
+              "descricaoDetalhada": "X-Salada Especial",
+              "valor": 21.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "4": 3.0,
+              "5": 2.0,
+              "6": 1.5
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 1,
+              "nome": "molho da casa",
+              "valor": 2.5
+            }
+          ]
+        },
+        {
+          "quantidade": 1,
+          "subtotal": 32.0,
+          "produto": {
+            "idProduto": 5,
+            "nome": "Duplo Cheddar",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 5,
+              "descricaoDetalhada": "Dois hambúrgueres artesanais de 120g, cheddar cremoso e cebola caramelizada.",
+              "valor": 32.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 2.0,
+              "10": 4.0,
+              "11": 1.0
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 3,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "19:25:00",
+      "horarioEntregaPrevisto": "20:35:00",
+      "status": "SAIU_PARA_ENTREGA",
+      "valorTotal": 71.8,
+      "valorPago": 49.3,
+      "idCliente": 3,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 49.9,
+          "produto": {
+            "idProduto": 3,
+            "nome": "X-Bacon",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 3,
+              "descricaoDetalhada": "Hambúrguer bovino, cheddar cremoso e generosas fatias de bacon crocante.",
+              "valor": 24.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "10": 2.0,
+              "8": 3.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 1,
+              "nome": "molho da casa",
+              "valor": 25.0
+            }
+          ]
+        },
+        {
+          "quantidade": 1,
+          "subtotal": 21.9,
+          "produto": {
+            "idProduto": 2,
+            "nome": "X-Salada",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 2,
+              "descricaoDetalhada": "X-Salada Especial",
+              "valor": 21.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "4": 3.0,
+              "5": 2.0,
+              "6": 1.5
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 4,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "19:45:00",
+      "horarioEntregaPrevisto": "20:55:00",
+      "status": "EM_PREPARO",
+      "valorTotal": 36.0,
+      "valorPago": 36.0,
+      "idCliente": 4,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 2,
+          "subtotal": 36.0,
+          "produto": {
+            "idProduto": 1,
+            "nome": "X-Burger Clássico",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 1,
+              "descricaoDetalhada": "Hambúrguer bovino artesanal de 120g, queijo mussarela derretido, alface crocante e tomate fresco no pão brioche tostado.",
+              "valor": 18.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.5,
+              "5": 1.5
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 5,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "20:01:00",
+      "horarioEntregaPrevisto": "21:05:00",
+      "status": "CANCELADO",
+      "valorTotal": 111.0,
+      "valorPago": 101.0,
+      "idCliente": 5,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 3,
+          "subtotal": 111.0,
+          "produto": {
+            "idProduto": 5,
+            "nome": "Duplo Cheddar",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 5,
+              "descricaoDetalhada": "Dois hambúrgueres artesanais de 120g, cheddar cremoso e cebola caramelizada.",
+              "valor": 32.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 2.0,
+              "10": 4.0,
+              "11": 1.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 1,
+              "nome": "molho da casa",
+              "valor": 2.5
+            },
+            {
+              "idAdicional": 1,
+              "nome": "molho da casa",
+              "valor": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idPedido": 6,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "20:04:00",
+      "horarioEntregaPrevisto": "21:05:00",
+      "status": "EM_PREPARO",
+      "valorTotal": 70.69999999999999,
+      "valorPago": 707.0,
+      "idCliente": 6,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 26.9,
+          "produto": {
+            "idProduto": 4,
+            "nome": "X-Egg Bacon",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 4,
+              "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+              "valor": 26.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "9": 1.0,
+              "10": 2.0,
+              "8": 3.0
+            }
+          },
+          "adicionais": []
+        },
+        {
+          "quantidade": 2,
+          "subtotal": 43.8,
+          "produto": {
+            "idProduto": 2,
+            "nome": "X-Salada",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 2,
+              "descricaoDetalhada": "X-Salada Especial",
+              "valor": 21.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "4": 3.0,
+              "5": 2.0,
+              "6": 1.5
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 7,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "20:26:00",
+      "horarioEntregaPrevisto": "21:26:00",
+      "status": "RECEBIDO",
+      "valorTotal": 63.9,
+      "valorPago": 63.9,
+      "idCliente": 7,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 34.5,
+          "produto": {
+            "idProduto": 5,
+            "nome": "Duplo Cheddar",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 5,
+              "descricaoDetalhada": "Dois hambúrgueres artesanais de 120g, cheddar cremoso e cebola caramelizada.",
+              "valor": 32.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 2.0,
+              "10": 4.0,
+              "11": 1.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 1,
+              "nome": "molho da casa",
+              "valor": 2.5
+            }
+          ]
+        },
+        {
+          "quantidade": 1,
+          "subtotal": 29.4,
+          "produto": {
+            "idProduto": 4,
+            "nome": "X-Egg Bacon",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 4,
+              "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+              "valor": 26.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "9": 1.0,
+              "10": 2.0,
+              "8": 3.0
+            }
+          },
+          "adicionais": [
+            {
+              "idAdicional": 1,
+              "nome": "molho da casa",
+              "valor": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "idPedido": 8,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "20:30:00",
+      "horarioEntregaPrevisto": "21:31:00",
+      "status": "RECEBIDO",
+      "valorTotal": 18.0,
+      "valorPago": 18.0,
+      "idCliente": 8,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 18.0,
+          "produto": {
+            "idProduto": 1,
+            "nome": "X-Burger Clássico",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 1,
+              "descricaoDetalhada": "Hambúrguer bovino artesanal de 120g, queijo mussarela derretido, alface crocante e tomate fresco no pão brioche tostado.",
+              "valor": 18.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.5,
+              "5": 1.5
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 9,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "20:33:00",
+      "horarioEntregaPrevisto": "21:40:00",
+      "status": "ENTREGUE",
+      "valorTotal": 46.8,
+      "valorPago": 71.7,
+      "idCliente": 9,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 24.9,
+          "produto": {
+            "idProduto": 3,
+            "nome": "X-Bacon",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 3,
+              "descricaoDetalhada": "Hambúrguer bovino, cheddar cremoso e generosas fatias de bacon crocante.",
+              "valor": 24.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "10": 2.0,
+              "8": 3.0
+            }
+          },
+          "adicionais": []
+        },
+        {
+          "quantidade": 1,
+          "subtotal": 21.9,
+          "produto": {
+            "idProduto": 2,
+            "nome": "X-Salada",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 2,
+              "descricaoDetalhada": "X-Salada Especial",
+              "valor": 21.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "4": 3.0,
+              "5": 2.0,
+              "6": 1.5
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    },
+    {
+      "idPedido": 10,
+      "dataPedido": "2026-06-14",
+      "horarioPedido": "20:40:00",
+      "horarioEntregaPrevisto": "21:40:00",
+      "status": "SAIU_PARA_ENTREGA",
+      "valorTotal": 44.9,
+      "valorPago": 44.9,
+      "idCliente": 10,
+      "funcionarioResponsavel": {
+        "idUsuario": 3,
+        "nome": "Antonio",
+        "login": "Antony",
+        "senha": "6776"
+      },
+      "itensPedido": [
+        {
+          "quantidade": 1,
+          "subtotal": 26.9,
+          "produto": {
+            "idProduto": 4,
+            "nome": "X-Egg Bacon",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 4,
+              "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+              "valor": 26.9
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "9": 1.0,
+              "10": 2.0,
+              "8": 3.0
+            }
+          },
+          "adicionais": []
+        },
+        {
+          "quantidade": 1,
+          "subtotal": 18.0,
+          "produto": {
+            "idProduto": 1,
+            "nome": "X-Burger Clássico",
+            "ativo": true,
+            "descricaoProduto": {
+              "idDescricao": 1,
+              "descricaoDetalhada": "Hambúrguer bovino artesanal de 120g, queijo mussarela derretido, alface crocante e tomate fresco no pão brioche tostado.",
+              "valor": 18.0
+            },
+            "quantidadesIngredientesPorId": {
+              "1": 2.0,
+              "2": 1.0,
+              "3": 1.0,
+              "4": 1.5,
+              "5": 1.5
+            }
+          },
+          "adicionais": []
+        }
+      ]
+    }
+  ],
+  "estoque": {
+    "ingredientes": [
+      {
+        "idIngrediente": 1,
+        "nome": "Pão brioche",
+        "quantidadeAtual": 264.0,
+        "unidadeMedida": "2",
+        "quantidadeMinima": 50.0
+      },
+      {
+        "idIngrediente": 2,
+        "nome": "hambúrguer 120g",
+        "quantidadeAtual": 228.0,
+        "unidadeMedida": "1",
+        "quantidadeMinima": 85.0
+      },
+      {
+        "idIngrediente": 3,
+        "nome": "queijo mussarela",
+        "quantidadeAtual": 197.0,
+        "unidadeMedida": "1",
+        "quantidadeMinima": 50.0
+      },
+      {
+        "idIngrediente": 4,
+        "nome": "alface",
+        "quantidadeAtual": 130.5,
+        "unidadeMedida": "1",
+        "quantidadeMinima": 50.0
+      },
+      {
+        "idIngrediente": 5,
+        "nome": "tomate",
+        "quantidadeAtual": 135.5,
+        "unidadeMedida": "0.5",
+        "quantidadeMinima": 40.0
+      },
+      {
+        "idIngrediente": 6,
+        "nome": "milho",
+        "quantidadeAtual": 142.5,
+        "unidadeMedida": "0.5",
+        "quantidadeMinima": 25.0
+      },
+      {
+        "idIngrediente": 7,
+        "nome": "queijo cheddar",
+        "quantidadeAtual": 150.0,
+        "unidadeMedida": "1",
+        "quantidadeMinima": 25.0
+      },
+      {
+        "idIngrediente": 8,
+        "nome": "bacon",
+        "quantidadeAtual": 232.0,
+        "unidadeMedida": "3",
+        "quantidadeMinima": 65.0
+      },
+      {
+        "idIngrediente": 9,
+        "nome": "ovo",
+        "quantidadeAtual": 296.0,
+        "unidadeMedida": "1",
+        "quantidadeMinima": 60.0
+      },
+      {
+        "idIngrediente": 10,
+        "nome": "cheddar",
+        "quantidadeAtual": 122.0,
+        "unidadeMedida": "2",
+        "quantidadeMinima": 60.0
+      },
+      {
+        "idIngrediente": 11,
+        "nome": "cebola caramelizada",
+        "quantidadeAtual": 246.0,
+        "unidadeMedida": "1",
+        "quantidadeMinima": 25.0
+      }
+    ]
+  },
+  "fornecedores": [],
+  "recebimentosEstoque": [],
+  "acoesEstoque": [
+    "Baixei 4.0 de Pão brioche no pedido 1",
+    "Baixei 2.0 de hambúrguer 120g no pedido 1",
+    "Baixei 2.0 de ovo no pedido 1",
+    "Baixei 4.0 de cheddar no pedido 1",
+    "Baixei 6.0 de bacon no pedido 1",
+    "Baixei 2.0 de Pão brioche no pedido 2",
+    "Baixei 1.0 de hambúrguer 120g no pedido 2",
+    "Baixei 3.0 de alface no pedido 2",
+    "Baixei 2.0 de tomate no pedido 2",
+    "Baixei 1.5 de milho no pedido 2",
+    "Baixei 2.0 de Pão brioche no pedido 2",
+    "Baixei 2.0 de hambúrguer 120g no pedido 2",
+    "Baixei 4.0 de cheddar no pedido 2",
+    "Baixei 1.0 de cebola caramelizada no pedido 2",
+    "Baixei 2.0 de Pão brioche no pedido 3",
+    "Baixei 1.0 de hambúrguer 120g no pedido 3",
+    "Baixei 2.0 de cheddar no pedido 3",
+    "Baixei 3.0 de bacon no pedido 3",
+    "Baixei 2.0 de Pão brioche no pedido 3",
+    "Baixei 1.0 de hambúrguer 120g no pedido 3",
+    "Baixei 3.0 de alface no pedido 3",
+    "Baixei 2.0 de tomate no pedido 3",
+    "Baixei 1.5 de milho no pedido 3",
+    "Baixei 4.0 de Pão brioche no pedido 4",
+    "Baixei 2.0 de hambúrguer 120g no pedido 4",
+    "Baixei 2.0 de queijo mussarela no pedido 4",
+    "Baixei 3.0 de alface no pedido 4",
+    "Baixei 3.0 de tomate no pedido 4",
+    "Baixei 6.0 de Pão brioche no pedido 5",
+    "Baixei 6.0 de hambúrguer 120g no pedido 5",
+    "Baixei 12.0 de cheddar no pedido 5",
+    "Baixei 3.0 de cebola caramelizada no pedido 5",
+    "Baixei 2.0 de Pão brioche no pedido 6",
+    "Baixei 1.0 de hambúrguer 120g no pedido 6",
+    "Baixei 1.0 de ovo no pedido 6",
+    "Baixei 2.0 de cheddar no pedido 6",
+    "Baixei 3.0 de bacon no pedido 6",
+    "Baixei 4.0 de Pão brioche no pedido 6",
+    "Baixei 2.0 de hambúrguer 120g no pedido 6",
+    "Baixei 6.0 de alface no pedido 6",
+    "Baixei 4.0 de tomate no pedido 6",
+    "Baixei 3.0 de milho no pedido 6",
+    "Baixei 2.0 de Pão brioche no pedido 9",
+    "Baixei 1.0 de hambúrguer 120g no pedido 9",
+    "Baixei 2.0 de cheddar no pedido 9",
+    "Baixei 3.0 de bacon no pedido 9",
+    "Baixei 2.0 de Pão brioche no pedido 9",
+    "Baixei 1.0 de hambúrguer 120g no pedido 9",
+    "Baixei 3.0 de alface no pedido 9",
+    "Baixei 2.0 de tomate no pedido 9",
+    "Baixei 1.5 de milho no pedido 9",
+    "Baixei 2.0 de Pão brioche no pedido 10",
+    "Baixei 1.0 de hambúrguer 120g no pedido 10",
+    "Baixei 1.0 de ovo no pedido 10",
+    "Baixei 2.0 de cheddar no pedido 10",
+    "Baixei 3.0 de bacon no pedido 10",
+    "Baixei 2.0 de Pão brioche no pedido 10",
+    "Baixei 1.0 de hambúrguer 120g no pedido 10",
+    "Baixei 1.0 de queijo mussarela no pedido 10",
+    "Baixei 1.5 de alface no pedido 10",
+    "Baixei 1.5 de tomate no pedido 10"
+  ],
+  "vendas": [
+    {
+      "idVenda": 1,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 53.8,
+      "pedido": {
+        "idPedido": 1,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "18:56:00",
+        "horarioEntregaPrevisto": "20:00:00",
+        "status": "SAIU_PARA_ENTREGA",
+        "valorTotal": 53.8,
+        "valorPago": 53.9,
+        "idCliente": 1,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 2,
+            "subtotal": 53.8,
+            "produto": {
+              "idProduto": 4,
+              "nome": "X-Egg Bacon",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 4,
+                "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+                "valor": 26.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "9": 1.0,
+                "10": 2.0,
+                "8": 3.0
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 1,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 1\r\nCliente 1\r\nValor total 53.8"
+      },
+      "entrega": {
+        "idEntrega": 1,
+        "statusEntrega": "em rota",
+        "confirmacaoWhatsapp": true,
+        "motoqueiro": {
+          "idMotoqueiro": 1,
+          "nome": "Carlos Eduardo Batista",
+          "telefone": "(38) 99712-6345",
+          "ativo": true
+        },
+        "regiaoEntrega": {
+          "idRegiao": 1,
+          "nomeRegiao": "Central",
+          "bairros": "Centro, Bom Jesus"
+        }
+      }
+    },
+    {
+      "idVenda": 2,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 56.4,
+      "pedido": {
+        "idPedido": 2,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "19:15:00",
+        "horarioEntregaPrevisto": "20:10:00",
+        "status": "ENTREGUE",
+        "valorTotal": 56.4,
+        "valorPago": 56.4,
+        "idCliente": 2,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 1,
+            "subtotal": 24.4,
+            "produto": {
+              "idProduto": 2,
+              "nome": "X-Salada",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 2,
+                "descricaoDetalhada": "X-Salada Especial",
+                "valor": 21.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "4": 3.0,
+                "5": 2.0,
+                "6": 1.5
+              }
+            },
+            "adicionais": [
+              {
+                "idAdicional": 1,
+                "nome": "molho da casa",
+                "valor": 2.5
+              }
+            ]
+          },
+          {
+            "quantidade": 1,
+            "subtotal": 32.0,
+            "produto": {
+              "idProduto": 5,
+              "nome": "Duplo Cheddar",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 5,
+                "descricaoDetalhada": "Dois hambúrgueres artesanais de 120g, cheddar cremoso e cebola caramelizada.",
+                "valor": 32.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 2.0,
+                "10": 4.0,
+                "11": 1.0
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 2,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 2\r\nCliente 2\r\nValor total 56.4"
+      },
+      "entrega": {
+        "idEntrega": 2,
+        "statusEntrega": "Concluida",
+        "confirmacaoWhatsapp": true,
+        "motoqueiro": {
+          "idMotoqueiro": 1,
+          "nome": "Carlos Eduardo Batista",
+          "telefone": "(38) 99712-6345",
+          "ativo": true
+        },
+        "regiaoEntrega": {
+          "idRegiao": 1,
+          "nomeRegiao": "Central",
+          "bairros": "Centro, Bom Jesus"
+        }
+      }
+    },
+    {
+      "idVenda": 3,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 71.8,
+      "pedido": {
+        "idPedido": 3,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "19:25:00",
+        "horarioEntregaPrevisto": "20:35:00",
+        "status": "SAIU_PARA_ENTREGA",
+        "valorTotal": 71.8,
+        "valorPago": 49.3,
+        "idCliente": 3,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 1,
+            "subtotal": 49.9,
+            "produto": {
+              "idProduto": 3,
+              "nome": "X-Bacon",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 3,
+                "descricaoDetalhada": "Hambúrguer bovino, cheddar cremoso e generosas fatias de bacon crocante.",
+                "valor": 24.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "10": 2.0,
+                "8": 3.0
+              }
+            },
+            "adicionais": [
+              {
+                "idAdicional": 1,
+                "nome": "molho da casa",
+                "valor": 25.0
+              }
+            ]
+          },
+          {
+            "quantidade": 1,
+            "subtotal": 21.9,
+            "produto": {
+              "idProduto": 2,
+              "nome": "X-Salada",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 2,
+                "descricaoDetalhada": "X-Salada Especial",
+                "valor": 21.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "4": 3.0,
+                "5": 2.0,
+                "6": 1.5
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 3,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 3\r\nCliente 3\r\nValor total 71.8"
+      },
+      "entrega": {
+        "idEntrega": 3,
+        "statusEntrega": "em rota",
+        "confirmacaoWhatsapp": true,
+        "motoqueiro": {
+          "idMotoqueiro": 1,
+          "nome": "Carlos Eduardo Batista",
+          "telefone": "(38) 99712-6345",
+          "ativo": true
+        },
+        "regiaoEntrega": {
+          "idRegiao": 1,
+          "nomeRegiao": "Central",
+          "bairros": "Centro, Bom Jesus"
+        }
+      }
+    },
+    {
+      "idVenda": 4,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 36.0,
+      "pedido": {
+        "idPedido": 4,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "19:45:00",
+        "horarioEntregaPrevisto": "20:55:00",
+        "status": "EM_PREPARO",
+        "valorTotal": 36.0,
+        "valorPago": 36.0,
+        "idCliente": 4,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 2,
+            "subtotal": 36.0,
+            "produto": {
+              "idProduto": 1,
+              "nome": "X-Burger Clássico",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 1,
+                "descricaoDetalhada": "Hambúrguer bovino artesanal de 120g, queijo mussarela derretido, alface crocante e tomate fresco no pão brioche tostado.",
+                "valor": 18.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "3": 1.0,
+                "4": 1.5,
+                "5": 1.5
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 4,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 4\r\nCliente 4\r\nValor total 36.0"
+      }
+    },
+    {
+      "idVenda": 5,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 111.0,
+      "pedido": {
+        "idPedido": 5,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "20:01:00",
+        "horarioEntregaPrevisto": "21:05:00",
+        "status": "EM_PREPARO",
+        "valorTotal": 111.0,
+        "valorPago": 101.0,
+        "idCliente": 5,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 3,
+            "subtotal": 111.0,
+            "produto": {
+              "idProduto": 5,
+              "nome": "Duplo Cheddar",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 5,
+                "descricaoDetalhada": "Dois hambúrgueres artesanais de 120g, cheddar cremoso e cebola caramelizada.",
+                "valor": 32.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 2.0,
+                "10": 4.0,
+                "11": 1.0
+              }
+            },
+            "adicionais": [
+              {
+                "idAdicional": 1,
+                "nome": "molho da casa",
+                "valor": 2.5
+              },
+              {
+                "idAdicional": 1,
+                "nome": "molho da casa",
+                "valor": 2.5
+              }
+            ]
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 5,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 5\r\nCliente 5\r\nValor total 111.0"
+      }
+    },
+    {
+      "idVenda": 6,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 70.69999999999999,
+      "pedido": {
+        "idPedido": 6,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "20:04:00",
+        "horarioEntregaPrevisto": "21:05:00",
+        "status": "EM_PREPARO",
+        "valorTotal": 70.69999999999999,
+        "valorPago": 707.0,
+        "idCliente": 6,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 1,
+            "subtotal": 26.9,
+            "produto": {
+              "idProduto": 4,
+              "nome": "X-Egg Bacon",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 4,
+                "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+                "valor": 26.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "9": 1.0,
+                "10": 2.0,
+                "8": 3.0
+              }
+            },
+            "adicionais": []
+          },
+          {
+            "quantidade": 2,
+            "subtotal": 43.8,
+            "produto": {
+              "idProduto": 2,
+              "nome": "X-Salada",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 2,
+                "descricaoDetalhada": "X-Salada Especial",
+                "valor": 21.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "4": 3.0,
+                "5": 2.0,
+                "6": 1.5
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 6,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 6\r\nCliente 6\r\nValor total 70.69999999999999"
+      }
+    },
+    {
+      "idVenda": 7,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 46.8,
+      "pedido": {
+        "idPedido": 9,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "20:33:00",
+        "horarioEntregaPrevisto": "21:40:00",
+        "status": "ENTREGUE",
+        "valorTotal": 46.8,
+        "valorPago": 71.7,
+        "idCliente": 9,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 1,
+            "subtotal": 24.9,
+            "produto": {
+              "idProduto": 3,
+              "nome": "X-Bacon",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 3,
+                "descricaoDetalhada": "Hambúrguer bovino, cheddar cremoso e generosas fatias de bacon crocante.",
+                "valor": 24.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "10": 2.0,
+                "8": 3.0
+              }
+            },
+            "adicionais": []
+          },
+          {
+            "quantidade": 1,
+            "subtotal": 21.9,
+            "produto": {
+              "idProduto": 2,
+              "nome": "X-Salada",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 2,
+                "descricaoDetalhada": "X-Salada Especial",
+                "valor": 21.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "4": 3.0,
+                "5": 2.0,
+                "6": 1.5
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 7,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 9\r\nCliente 9\r\nValor total 46.8"
+      },
+      "entrega": {
+        "idEntrega": 4,
+        "statusEntrega": "Concluida",
+        "confirmacaoWhatsapp": true,
+        "motoqueiro": {
+          "idMotoqueiro": 1,
+          "nome": "Carlos Eduardo Batista",
+          "telefone": "(38) 99712-6345",
+          "ativo": true
+        },
+        "regiaoEntrega": {
+          "idRegiao": 3,
+          "nomeRegiao": "Bela Vista",
+          "bairros": "Bela Vista"
+        }
+      }
+    },
+    {
+      "idVenda": 8,
+      "dataVenda": "2026-06-14",
+      "valorTotal": 44.9,
+      "pedido": {
+        "idPedido": 10,
+        "dataPedido": "2026-06-14",
+        "horarioPedido": "20:40:00",
+        "horarioEntregaPrevisto": "21:40:00",
+        "status": "SAIU_PARA_ENTREGA",
+        "valorTotal": 44.9,
+        "valorPago": 44.9,
+        "idCliente": 10,
+        "funcionarioResponsavel": {
+          "idUsuario": 3,
+          "nome": "Antonio",
+          "login": "Antony",
+          "senha": "6776"
+        },
+        "itensPedido": [
+          {
+            "quantidade": 1,
+            "subtotal": 26.9,
+            "produto": {
+              "idProduto": 4,
+              "nome": "X-Egg Bacon",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 4,
+                "descricaoDetalhada": "Hambúrguer bovino 120g, ovo frito, cheddar derretido, bacon crocante",
+                "valor": 26.9
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "9": 1.0,
+                "10": 2.0,
+                "8": 3.0
+              }
+            },
+            "adicionais": []
+          },
+          {
+            "quantidade": 1,
+            "subtotal": 18.0,
+            "produto": {
+              "idProduto": 1,
+              "nome": "X-Burger Clássico",
+              "ativo": true,
+              "descricaoProduto": {
+                "idDescricao": 1,
+                "descricaoDetalhada": "Hambúrguer bovino artesanal de 120g, queijo mussarela derretido, alface crocante e tomate fresco no pão brioche tostado.",
+                "valor": 18.0
+              },
+              "quantidadesIngredientesPorId": {
+                "1": 2.0,
+                "2": 1.0,
+                "3": 1.0,
+                "4": 1.5,
+                "5": 1.5
+              }
+            },
+            "adicionais": []
+          }
+        ]
+      },
+      "recibo": {
+        "idRecibo": 8,
+        "dataEmissao": "2026-06-14",
+        "detalhes": "Loja Hmmmburguer\r\nTelefone 38988889999\r\nEndereco Rua X, 10, Jardim\r\nPedido 10\r\nCliente 10\r\nValor total 44.9"
+      },
+      "entrega": {
+        "idEntrega": 5,
+        "statusEntrega": "em rota",
+        "confirmacaoWhatsapp": true,
+        "motoqueiro": {
+          "idMotoqueiro": 1,
+          "nome": "Carlos Eduardo Batista",
+          "telefone": "(38) 99712-6345",
+          "ativo": true
+        },
+        "regiaoEntrega": {
+          "idRegiao": 1,
+          "nomeRegiao": "Central",
+          "bairros": "Centro, Bom Jesus"
+        }
+      }
+    }
+  ],
+  "motoqueiros": [
+    {
+      "idMotoqueiro": 1,
+      "nome": "Carlos Eduardo Batista",
+      "telefone": "(38) 99712-6345",
+      "ativo": true
+    },
+    {
+      "idMotoqueiro": 2,
+      "nome": "Tiago Henrique Mendes",
+      "telefone": "(38) 99683-7451",
+      "ativo": true
+    }
+  ],
+  "regioesEntrega": [
+    {
+      "idRegiao": 1,
+      "nomeRegiao": "Central",
+      "bairros": "Centro, Bom Jesus"
+    },
+    {
+      "idRegiao": 2,
+      "nomeRegiao": "Rio Grande",
+      "bairros": "Rio Grande, Palha"
+    },
+    {
+      "idRegiao": 3,
+      "nomeRegiao": "Bela Vista",
+      "bairros": "Bela Vista"
+    }
+  ],
+  "relatoriosEmitidos": []
+}
